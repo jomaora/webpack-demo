@@ -3,12 +3,12 @@
 // o SyntaxError: Cannot use import statement outside a module
 // entonces hay que poner require porque nodejs se espera a tener una syntaxis CommonJS y no ESModules (import/export)
 
-// import { DateTime } from "luxon";
-// import {random, times} from "lodash/fp";
+import { DateTime } from "luxon";
+import {random, times} from "lodash/fp";
 // import {random} from "lodash";
 
-const { DateTime } = require("luxon");
-const { random, times } = require("lodash/fp");
+// const { DateTime } = require("luxon");
+// const { random, times } = require("lodash/fp");
 
 const main = () => {
   const fecha = DateTime.now().plus ({days: 6});
